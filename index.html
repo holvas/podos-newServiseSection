@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabinet podologiczny we Wrocławiu – Profesjonalna pielęgnacja stóp, leczenie wrastających paznokci, pedicure medyczny i więcej. Skontaktuj się z nami już dziś!">
+    <meta name="keywords" content="gabinet podologiczny Wrocław,pedicure medyczny Wrocław,leczenie wrastających paznokci Wrocław,usuwanie modzeli Wrocław,pielęgnacja stóp Wrocław,podologia dziecięca Wrocław,profilaktyka stóp cukrzycowych Wrocław,leczenie odcisków Wrocław,usuwanie kurzajek Wrocław,terapia na ból pięt Wrocław,pielęgnacja stóp Wrocław,pedicure medyczny,leczenie wrastających paznokci,usuwanie modzeli,pielęgnacja stóp,podologia dziecięca,profilaktyka stóp cukrzycowych,leczenie odcisków,usuwanie kurzajek,terapia na ból pięt,медичний педикюр,лікування врослого нігтя,видалення мозолі,догляд за ногами,дитяча подологія,профілактика діабетичної стопи,лікування мозолів,видалення бородавок,лікування болю в п'яті,кабінет подології Вроцлав,медичний педикюр Вроцлав,лікування врослого нігтя Вроцлав,видалення мозолів Вроцлав,догляд за стопами ніг Вроцлав,педіатрична подологія Вроцлав,профілактика зубастих ніг Вроцлав,лікування мозолів Вроцлав,Видалення бородавок Вроцлав,Терапія болю п'ят Вроцлав,догляд за стопами ніг Вроцлав" >
+    <title>Olena's StepSoft Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home">Olena's <span class="green">Step</span><span class="yellow">Soft</span> Studio</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active" id="home-link"></a></li>
+                <li><a href="#about" id="about-link"></a></li>
+                <li><a href="#services" id="services-link"></a></li>
+                <li><a href="#contact" id="contact-link"></a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <div class="language-switcher">
+                <button onclick="switchLanguage('pl')">PL</button>
+                <button onclick="switchLanguage('uk')">UA</button>
+                <button onclick="toggleTheme('light')">🌞</button>
+                <button onclick="toggleTheme('dark')">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1 id="home-title"></h1>
+            <p id="home-description"></p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 id="about-title"></h2>
+            <p id="about-description"></p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 id="services-title"></h2>
+            <div class="service-grid">
+                <div class="service">
+                    <h3 id="service-1-title"></h3>
+                    <p id="service-1-description"></p>
+                </div>
+                <div class="service">
+                    <h3 id="service-2-title"></h3>
+                    <p id="service-2-description"></p>
+                </div>
+                <div class="service">
+                    <h3 id="service-3-title"></h3>
+                    <p id="service-3-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 id="contact-title"></h2>
+            <p id="contact-description"></p>
+            <form action="mailto:holvascompany@gmail.com" method="post" enctype="text/plain">
+                <label for="name" id="name-label"></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone" id="phone-label"></label>
+                <input type="number" id="tel" name="tel" required>
+
+                <label for="email" id="email-label"></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" id="message-label"></label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button class="submit-btn" type="submit" id="submit-btn"></button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-text"></p>
+    </footer>
+
+    <script src="langtest.js"></script>
+    <script src="themetest.js"></script>
+    <script src="sendmailtest.js"></script>
+</body>
+</html>
