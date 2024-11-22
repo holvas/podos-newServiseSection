@@ -179,8 +179,8 @@ button.active {
 
 .scroll-up  {
     position: fixed;
-    right: 30px;
-    bottom: 10px;
+    right: 48%;
+    bottom: 94%;
     width: 40px;
     height: 40px;
     color: #32a201;
