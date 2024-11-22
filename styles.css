@@ -123,9 +123,23 @@ footer {
     align-items: center;
 }
 
+.footer-item div {
+    padding: 10px;
+}
+
 footer.light-theme {
     background-color: rgba(255, 255, 255, 0.9);
     color: #333;
+}
+
+footer h3 {
+    color: #32a201;
+}
+
+.sosial-link {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 10px;
 }
 
 .language-switcher {
@@ -144,8 +158,17 @@ footer.light-theme {
     transition: color 0.3s;
 }
 
+.language-switcher button:hover,
 .theme-switcher button:hover {
-    color: #fcd53f;
+    color: #32a201;
+}
+
+button.active {
+    background-color: #143f02;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
 }
 
 .theme-switcher {
@@ -153,6 +176,9 @@ footer.light-theme {
     gap: 10px;
     align-items: center;
 }
+
+
+
 
 /* Адаптивний стиль */
 @media (max-width: 768px) {

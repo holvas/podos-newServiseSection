@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PodOS - gabinet podologiczny we Wrocławiu – Profesjonalna pielęgnacja stóp, leczenie wrastających paznokci, pedicure medyczny i więcej. Skontaktuj się z nami już dziś!">
-    <meta name="keywords" content="PodOS - gabinet podologiczny we Wrocławiu,gabinet podologiczny Wrocław,pedicure medyczny Wrocław,leczenie wrastających paznokci Wrocław,usuwanie modzeli Wrocław,pielęgnacja stóp Wrocław,podologia dziecięca Wrocław,profilaktyka stóp cukrzycowych Wrocław,leczenie odcisków Wrocław,usuwanie kurzajek Wrocław,terapia na ból pięt Wrocław,pielęgnacja stóp Wrocław,pedicure medyczny,leczenie wrastających paznokci,usuwanie modzeli,pielęgnacja stóp,podologia dziecięca,profilaktyka stóp cukrzycowych,leczenie odcisków,usuwanie kurzajek,terapia na ból pięt,PodOS кабінет подологічний у Вроцлаві,медичний педикюр,лікування врослого нігтя,видалення мозолі,догляд за ногами,дитяча подологія,профілактика діабетичної стопи,лікування мозолів,видалення бородавок,лікування болю в п'яті,кабінет подології Вроцлав,медичний педикюр Вроцлав,лікування врослого нігтя Вроцлав,видалення мозолів Вроцлав,догляд за стопами ніг Вроцлав,педіатрична подологія Вроцлав,профілактика зубастих ніг Вроцлав,лікування мозолів Вроцлав,Видалення бородавок Вроцлав,Терапія болю п'ят Вроцлав,догляд за стопами ніг Вроцлав" >
+    <meta name="keywords" content="PodOS gabinet podologiczny we Wrocławiu,gabinet podologiczny Wrocław,pedicure medyczny Wrocław,leczenie wrastających paznokci Wrocław,usuwanie modzeli Wrocław,pielęgnacja stóp Wrocław,podologia dziecięca Wrocław,profilaktyka stóp cukrzycowych Wrocław,leczenie odcisków Wrocław,usuwanie kurzajek Wrocław,terapia na ból pięt Wrocław,pielęgnacja stóp Wrocław,pedicure medyczny,leczenie wrastających paznokci,usuwanie modzeli,pielęgnacja stóp,podologia dziecięca,profilaktyka stóp cukrzycowych,leczenie odcisków,usuwanie kurzajek,terapia na ból pięt,PodOS кабінет подологічний у Вроцлаві,медичний педикюр,лікування врослого нігтя,видалення мозолі,догляд за ногами,дитяча подологія,профілактика діабетичної стопи,лікування мозолів,видалення бородавок,лікування болю в п'яті,кабінет подології Вроцлав,медичний педикюр Вроцлав,лікування врослого нігтя Вроцлав,видалення мозолів Вроцлав,догляд за стопами ніг Вроцлав,педіатрична подологія Вроцлав,профілактика зубастих ніг Вроцлав,лікування мозолів Вроцлав,Видалення бородавок Вроцлав,Терапія болю п'ят Вроцлав,догляд за стопами ніг Вроцлав" >
     <title>PodOS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/6ea4a26d64/UntitledProject/style-svg.css">
+<script defer src="https://i.icomoon.io/public/temp/6ea4a26d64/UntitledProject/svgxuse.js"></script>
 </head>
 <body>
     <header>
-        <!-- <div class="logo">
-            <a href="#home">Olena's <span class="green">Step</span><span class="yellow">Soft</span> Studio</a>
-        </div> -->
         <div class="logo">
-            <a href="#home" width>
-                <img src="img/logo_podos.webp"
+            <a href="#home">
+                <img src="img/logo_podos.png"
                 alt="PodOS Logo" class="logo-image">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="#home" class="active" id="home-link"></a></li>
-                <li><a href="#about" id="about-link"></a></li>
-                <li><a href="#services" id="services-link"></a></li>
-                <li><a href="#contact" id="contact-link"></a></li>
+                <li><a href="#home" class="active" id="home-link">Strona główna</a></li>
+                <li><a href="#about" id="about-link">O nas</a></li>
+                <li><a href="#services" id="services-link">Usługi</a></li>
+                <li><a href="#contact" id="contact-link">Kontakt</a></li>
             </ul>
         </nav>
         <div class="header-controls">
             <div class="language-switcher">
-                <button onclick="switchLanguage('pl')">PL</button>
-                <button onclick="switchLanguage('uk')">UA</button>
-                <button onclick="toggleTheme('light')">🌞</button>
-                <button onclick="toggleTheme('dark')">🌙</button>
+                <button data-value="pl" onclick="switchLanguage('pl')">PL</button>
+                <button data-value="uk" onclick="switchLanguage('uk')">UA</button>
+                <button class="switcher-activ" data-value="light" onclick="toggleTheme('light')">
+                    <svg class="icon icon-name"><use xlink:href="#icon-adjust-brightness"></use></svg>
+                <button class="switcher-activ" data-value="dark" onclick="toggleTheme('dark')">
+                    <svg class="icon icon-name"><use xlink:href="#icon-weather-sunny"></use></svg>                
+                </button>
+                </button>
             </div>
         </div>
     </header>
@@ -40,14 +43,16 @@
     <main>
         <!-- Home Section -->
         <section id="home">
-            <h1 id="home-title"></h1>
-            <p id="home-description"></p>
+            <h1 id="home-title">PodOS - gabinet podologiczny Oleny Stepaniuk</h1>
+            <p id="home-description">Serdecznie zapraszam na konsultację, podczas której szczegółowo zidentyfikujemy Twój problem, opracujemy plan leczenia i dobierzemy odpowiedni harmonogram zabiegów.</p>
+            <p id="home-description-2">W gabinecie podologicznym „PodOS” wszystkie Twoje „czarne” problemy staną się „białym” rozwiązaniem!</p>
         </section>
 
         <!-- About Section -->
         <section id="about">
-            <h2 id="about-title"></h2>
-            <p id="about-description"></p>
+            <h2 id="about-title">O nas</h2>
+            <p id="about-description">Specjaliści gabinetu podologicznego „PodOS” ukończyli edukację w zakresie podologii oraz certyfikację w swojej specjalności.</p>
+            <p id="about-description-2">Pracujemy wyłącznie zgodnie z normami sanitarno-epidemiologicznymi (wszystkie narzędzia używane podczas zabiegów po każdym zabiegu poddawane są obowiązkowej sterylizacji termicznej; po każdym zabiegu wszystkie środki higieny osobistej wymieniane są na nowe, dezynfekowane profesjonalnymi środkami, także po każdym zabiegu, wszystkie produkty jednorazowe (takie jak: rękawiczki jednorazowe, ręczniki i serwetki itp.) użyte podczas zabiegów podlegają utylizacji) i zgodnie z obowiązującymi przepisami BHP. Dzięki temu nasi klienci mogą czuć się bezpiecznie.</p>
         </section>
 
         <!-- Services Section -->
@@ -92,19 +97,33 @@
     </main>
 
     <footer class="footer-item">
-            <p id="footer-kontakt">
-                Wrocław <br /> ul. Braniborska 61/13 <br />
-                (budynek Legnicka Residence)<br />
-                Gabinet przy studii "Pracownia fryzur"
-            </p>
+            <div>
+                <h3 id="footer-kontakt-text"></h3>
+                <span id="footer-kontakt-text-1"></span>
+                <span id="footer-kontakt-text-2"></span>
+                <p id="footer-kontakt-text-3"></p>
+                <p id="footer-kontakt-text-4"></p>
+            </div>
+            
             <p id="footer-text"></p>
-            <p id="footer-social">
 
-            </p>
+            <div id="footer-social">
+                <h3 id="footer-social-1"></h3>
+                <a class="sosial-link">
+                    <svg class="icon icon-facebook2"><use xlink:href="#icon-facebook2"></use></svg>
+                </a>
+                <a class="sosial-link">
+                    <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+                </a>               
+                <a class="sosial-link">
+                    <svg class="icon icon-map2"><use xlink:href="#icon-map2"></use></svg>
+                </a>
+                    
+            </div>
     </footer>
 
-    <script src="langtest.js"></script>
-    <script src="themetest.js"></script>
+    <script src="langswitcher.js"></script>
+    <script src="themeswitcher.js"></script>
     <script src="sendmailtest.js"></script>
 </body>
 </html>
