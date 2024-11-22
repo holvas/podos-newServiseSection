@@ -177,8 +177,50 @@ button.active {
     align-items: center;
 }
 
-
-
+.scroll-up  {
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    color: #32a201;
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 4px dimgrey;
+    opacity: 0;
+    transition: 0.2s;
+    transform: translateY(25px);
+    }
+    .scroll-up::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        content: '🡅';
+    }
+    .scroll-up:hover {
+        color: #143f02;
+    }
+    .scroll-up--active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    
+    .scroll-up_svg_path {
+    box-sizing: border-box;
+    fill: #000;
+    stroke: #fff;
+    stroke-width: 4px;
+    transition: .2s;
+    }
 
 /* Адаптивний стиль */
 @media (max-width: 768px) {
