@@ -4,15 +4,23 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #02793f;
-    color: #fff;
     margin: 0;
-    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s, background-image 0.3s;
+    background-size: cover;
+    background-position: center;
 }
 
 body.light-theme {
-    background-color: #fff;
-    color: #333;
+    background-color: #ffffff;
+    color: #000;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('img/podos _background.webp');
+}
+
+body.dark-theme {
+    background-color: #000000;
+    color: #fff;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/podos _background.webp');
 }
 
 header {
@@ -20,25 +28,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
     transition: background-color 0.3s;
 }
 
 header.light-theme {
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .logo a {
     font-size: 24px;
     text-decoration: none;
     color: #fff;
-}
-
-.green {
-    color: #02793f;
-}
-.yellow {
-    color: #fcd53f;
 }
 
 nav ul {
@@ -55,28 +56,30 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #fcd53f;
+    color: #32a201;
 }
 
 main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    /* background: rgba(255, 255, 255, 0.6);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    transition: background 0.3s;
+}
+
+main.dark-theme {
+    background: rgba(0, 0, 0, 0.95);
 }
 
 section {
     margin-bottom: 40px;
 }
 
-h1, h2, h3 {
-    color: #fcd53f;
-    font-size: 2em;
+h1, h2 {
+    color: #32a201;
     margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.5em;
-    color: #fcd53f;
 }
 
 .service-grid {
@@ -85,85 +88,64 @@ h2 {
     gap: 20px;
 }
 
-.service h3 {
-    color: #fcd53f;
-    font-size: 1.2em;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label, input {
+form input, form textarea, form button {
     margin: 10px 0;
-}
-
-textarea {
-    margin: 20px 0px 50px;
-}
-
-input, textarea {
     padding: 10px;
-    font-size: 1em;
-}
-
-button {
-    padding: 10px;
-    background-color: #fcd53f;
-    color: #000;
     font-size: 1em;
     border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form button {
+    width: 30%;
+    background-color: #32a201;
+    color: #fff;
     cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto 150px;
 }
 
-.submit-btn {
-width: 30%;
-margin: 0 auto 150px;
-}
-
-button:hover {
+form button:hover {
     background-color: #3c3b3b;
+    color: #fff;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #000;
-    font-size: 0.9em;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
+}
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer.light-theme {
-    background-color: #505050;
+    background-color: rgba(255, 255, 255, 0.9);
     color: #333;
 }
 
-footer a {
-    text-decoration: none;
-    color: #ff5e5e;
-}
-
-footer a:hover {
-    color: #fff;
-}
-
 .language-switcher {
-    text-align: right;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .language-switcher button,
 .theme-switcher button {
     background-color: transparent;
     border: none;
-    color: #fff;
     cursor: pointer;
-    padding: 4px;
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s;
 }
 
-.language-switcher button {
-    font-weight: bold;
-    font-size: small;
+.theme-switcher button:hover {
+    color: #fcd53f;
 }
 
 .theme-switcher {
@@ -172,18 +154,10 @@ footer a:hover {
     align-items: center;
 }
 
-.theme-switcher button {
-    font-size: 18px; /* Зробити іконки більшими */
-}
-
 /* Адаптивний стиль */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         text-align: center;
-    }
-
-    .theme-switcher {
-        margin-top: 10px;
     }
 }
