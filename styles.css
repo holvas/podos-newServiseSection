@@ -177,6 +177,7 @@ button.active {
     align-items: center;
 }
 
+/* SCROLL STYLES */
 .scroll-up  {
     position: fixed;
     right: 48%;
@@ -191,41 +192,110 @@ button.active {
     opacity: 0;
     transition: 0.2s;
     transform: translateY(25px);
-    }
-    .scroll-up::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        font-size: 20px;
-        content: '🡅';
-    }
-    .scroll-up:hover {
-        color: #143f02;
-    }
-    .scroll-up--active {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-    }
+}
+.scroll-up::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    content: '🡅';
+}
+.scroll-up:hover {
+    color: #143f02;
+}
+.scroll-up--active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
     
-    
-    .scroll-up_svg_path {
+.scroll-up_svg_path {
     box-sizing: border-box;
     fill: #000;
     stroke: #fff;
     stroke-width: 4px;
     transition: .2s;
-    }
+}
+
+/* Carousel Section */
+#carousel {
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease; /* Плавний перехід */
+}
+
+.carousel-item {
+    min-width: 100%;
+    opacity: 0; /* Початково приховані */
+    transition: opacity 0.5s ease; /* Плавний перехід для прозорості */
+    position: absolute; /* Щоб усі елементи були в одному місці */
+    top: 0;
+    left: 0;
+}
+
+.carousel-item.active {
+    opacity: 1; /* Показ активного слайду */
+    position: relative; /* Активний слайд відображається на своєму місці */
+}
+
+.carousel-item img {
+    display: block;
+    width:55%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
 
 /* Адаптивний стиль */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         text-align: center;
+    }
+
+    .scroll-up {
+        right: 4%;
+        bottom: 84%;
     }
 }

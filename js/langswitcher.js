@@ -70,6 +70,10 @@ function switchLanguage(language) {
         if (translations[language][key]) {
             element.textContent = translations[language][key];
         }
+        if (!translations[language]) {
+            console.error(`Translation for language "${language}" not found.`);
+            return;
+        }
     });
 
     // Зберігаємо вибір мови
@@ -99,3 +103,9 @@ function initializeLanguage() {
 
 // Викликаємо ініціалізацію мови при завантаженні
 window.addEventListener('DOMContentLoaded', initializeLanguage);
+if (typeof localStorage !== "undefined") {
+    localStorage.setItem('theme', theme);
+} else {
+    console.warn("localStorage is not available.");
+}
+
