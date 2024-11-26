@@ -136,11 +136,6 @@ footer.light-theme {
     color: #333;
 }
 
-.footer-social {
-    width: 50%;
-    display: flex;
-}
-
 footer h3 {
     color: #32a201;
 }
@@ -167,10 +162,16 @@ footer h3 {
 }
 
 .icon {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     fill: #fff;
 }
+
+.icon:hover {
+    fill: #32a201;
+    background-size: contain;
+}
+
 .language-switcher button:hover,
 .theme-switcher button:hover {
     color: #32a201;
