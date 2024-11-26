@@ -120,8 +120,12 @@ footer {
 .footer-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
+
+.text-adres {
+    font-size: 12px;
+    text-align: left;
+} 
 
 .footer-item div {
     padding: 10px;
@@ -132,13 +136,17 @@ footer.light-theme {
     color: #333;
 }
 
+.footer-social {
+    width: 50%;
+    display: flex;
+}
+
 footer h3 {
     color: #32a201;
 }
 
 .sosial-link {
     text-decoration: none;
-    color: #fff;
     padding-right: 10px;
 }
 
@@ -158,6 +166,11 @@ footer h3 {
     transition: color 0.3s;
 }
 
+.icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+}
 .language-switcher button:hover,
 .theme-switcher button:hover {
     color: #32a201;
@@ -222,7 +235,7 @@ button.active {
     transition: .2s;
 }
 
-/* Carousel Section */
+/*Carousel Section*/
 #carousel {
     margin: 40px 0;
     position: relative;
@@ -293,9 +306,4 @@ button.active {
         flex-direction: column;
         text-align: center;
     }
-
-    /* .scroll-up {
-        right: 4%;
-        bottom: 84%;
-    } */
 }
