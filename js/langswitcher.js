@@ -25,10 +25,8 @@ const translations = {
         "message-label": "Wiadomość:",
         "submit-btn": "Wyślij",
         "footer-kontakt-text": "Adres:",
-        "footer-kontakt-text-1": "Wrocław",
-        "footer-kontakt-text-2": "ul. Braniborska 61/13",
-        "footer-kontakt-text-3": "(budynek Legnicka Residence)",
-        "footer-kontakt-text-4": "Gabinet przy studii 'Pracownia fryzur'",
+        "footer-kontakt-text-1": "53-680 Wrocław, ul. Braniborska 61/13",
+        "footer-kontakt-text-2": "(budynek Legnicka Residence, 2 piętro, Gabinet przy studii 'Pracownia fryzur').",
         "footer-text": "© 2024 PodOS. Wszystkie prawa zastrzeżone.",
         "footer-social-1": "Śledź nas:",
         
