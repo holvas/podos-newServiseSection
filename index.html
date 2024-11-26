@@ -6,10 +6,10 @@
     <meta name="description" content="PodOS - gabinet podologiczny we Wrocławiu – Profesjonalna pielęgnacja stóp, leczenie wrastających paznokci, pedicure medyczny i więcej. Skontaktuj się z nami już dziś!">
     <meta name="keywords" content="PodOS gabinet podologiczny we Wrocławiu,gabinet podologiczny Wrocław,pedicure medyczny Wrocław,leczenie wrastających paznokci Wrocław,usuwanie modzeli Wrocław,pielęgnacja stóp Wrocław,podologia dziecięca Wrocław,profilaktyka stóp cukrzycowych Wrocław,leczenie odcisków Wrocław,usuwanie kurzajek Wrocław,terapia na ból pięt Wrocław,pielęgnacja stóp Wrocław,pedicure medyczny,leczenie wrastających paznokci,usuwanie modzeli,pielęgnacja stóp,podologia dziecięca,profilaktyka stóp cukrzycowych,leczenie odcisków,usuwanie kurzajek,terapia na ból pięt,PodOS кабінет подологічний у Вроцлаві,медичний педикюр,лікування врослого нігтя,видалення мозолі,догляд за ногами,дитяча подологія,профілактика діабетичної стопи,лікування мозолів,видалення бородавок,лікування болю в п'яті,кабінет подології Вроцлав,медичний педикюр Вроцлав,лікування врослого нігтя Вроцлав,видалення мозолів Вроцлав,догляд за стопами ніг Вроцлав,педіатрична подологія Вроцлав,профілактика зубастих ніг Вроцлав,лікування мозолів Вроцлав,Видалення бородавок Вроцлав,Терапія болю п'ят Вроцлав,догляд за стопами ніг Вроцлав" >
     <title>PodOS</title>
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" sizes="32x32">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/6ea4a26d64/UntitledProject/style-svg.css">
-<script defer src="https://i.icomoon.io/public/temp/6ea4a26d64/UntitledProject/svgxuse.js"></script>
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" sizes="32x32">
+    <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/6ea4a26d64/UntitledProject/style-svg.css">
+    <script defer src="https://i.icomoon.io/public/temp/6ea4a26d64/UntitledProject/svgxuse.js"></script> -->
 </head>
 <body>
     <header>
@@ -32,10 +32,10 @@
                 <button data-value="pl" onclick="switchLanguage('pl')">PL</button>
                 <button data-value="uk" onclick="switchLanguage('uk')">UA</button>
                 <button class="switcher-activ" data-value="light" onclick="toggleTheme('light')">
-                    <svg class="icon icon-name"><use xlink:href="#icon-adjust-brightness"></use></svg>
+                    <svg class="icon icon-adjust-brightness"><use xlink:href="img/symbol-defs.svg#icon-adjust-brightness" width="16px" height="16px"></use></svg>
                 </button>
                 <button class="switcher-activ" data-value="dark" onclick="toggleTheme('dark')">
-                    <svg class="icon icon-name"><use xlink:href="#icon-weather-sunny"></use></svg>                
+                    <svg class="icon icon-icon-weather-sunny"><use xlink:href="img/symbol-defs.svg#icon-weather-sunny" width="16px" height="16px"></use></svg>                
                 </button>
             </div>
         </div>
@@ -76,7 +76,7 @@
         </section>
 
         <!-- Carousel Section -->
-<section id="carousel">
+<!-- <section id="carousel">
     <div class="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -95,7 +95,7 @@
         <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
         <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
     </div>
-</section>    
+</section>     -->
 
         <!-- Contact Section -->
         <section id="contact">
@@ -130,28 +130,31 @@
     </main>
 
     <footer class="footer-item">
-            <div>
-                <h3 id="footer-kontakt-text"></h3>
-                <span id="footer-kontakt-text-1"></span>
-                <span id="footer-kontakt-text-2"></span>
+            <div class="adres">
+                <h3 id="footer-kontakt-text">Adres:</h3>
+                <p id="footer-kontakt-text-1">53-680 Wrocław, ul. Braniborska 61/13 <br/> <span class="text-adres">(budynek Legnicka Residence, 2 piętro, Gabinet przy studii 'Pracownia fryzur').</span></з>
+                <p id="footer-kontakt-text-2"></p>
                 <p id="footer-kontakt-text-3"></p>
                 <p id="footer-kontakt-text-4"></p>
             </div>
-            
-            <p id="footer-text"></p>
 
             <div id="footer-social">
-                <h3 id="footer-social-1"></h3>
-                <a class="sosial-link">
-                    <svg class="icon icon-facebook2"><use xlink:href="#icon-facebook2"></use></svg>
-                </a>
-                <a class="sosial-link">
-                    <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-                </a>               
-                <a class="sosial-link">
-                    <svg class="icon icon-map2"><use xlink:href="#icon-map2"></use></svg>
-                </a>
-                    
+                <div>
+                    <div>
+                        <h3 id="footer-social-1"></h3>
+                        <a class="sosial-link">
+                            <svg class="icon icon-facebook2"><use xlink:href="img/symbol-defs.svg#icon-facebook2" width="16px" height="16px"></use></svg>
+                        </a>
+                        <a class="sosial-link">
+                            <svg class="icon icon-instagram"><use xlink:href="img/symbol-defs.svg#icon-instagram" width="16px" height="16px"></use></svg>
+                        </a>               
+                        <a class="sosial-link">
+                            <svg class="icon icon-map2"><use xlink:href="img/symbol-defs.svg#icon-map2" width="16px" height="16px"></use></svg>
+                        </a>
+                    </div>
+
+                    <p id="footer-text"></p>
+                </div>
             </div>
     </footer>
 
@@ -159,6 +162,6 @@
     <script src="js/themeswitcher.js"></script>
     <script src="js/sendmailtest.js"></script>
     <script src="js/scrollbutton.js"></script>
-    <script src="js/caurosel.js"></script>
+    <script src="js/caurosel.js" defer></script>
 </body>
 </html>
