@@ -102,6 +102,7 @@ function initializeLanguage() {
 }
 
 // Викликаємо ініціалізацію мови при завантаженні
+let theme = 'dark';
 window.addEventListener('DOMContentLoaded', initializeLanguage);
 if (typeof localStorage !== "undefined") {
     localStorage.setItem('theme', theme);
