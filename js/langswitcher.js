@@ -1,9 +1,10 @@
 const translations = {
     pl: {
-        "home-link": "Strona główna",
-        "about-link": "O nas",
+        "home-link": "Główna",
+        // "about-link": "O nas",
         "services-link": "Usługi",
         "contact-link": "Kontakt",
+        "blog": "Blog",
         "home-title": "PodOS - gabinet podologiczny Oleny Stepaniuk",
         "home-description": "Serdecznie zapraszamy na konsultację, podczas której szczegółowo zidentyfikujemy Twój problem, opracujemy plan leczenia i dobierzemy odpowiedni harmonogram zabiegów.",
         "home-description-2": "W gabinecie podologicznym „PodOS” wszystkie Twoje „czarne” problemy staną się „białym” rozwiązaniem!",
