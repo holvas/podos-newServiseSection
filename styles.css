@@ -37,6 +37,20 @@ header.light-theme {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+.wrap-logo-slogan {
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+.wrap-logo-slogan .slogan {
+    text-align: left;
+    padding-left: 18px;
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
 .logo a {
     font-size: 24px;
     text-decoration: none;
@@ -61,12 +75,8 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    /* background: rgba(255, 255, 255, 0.6);
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     transition: background 0.3s;
 }
 
@@ -76,6 +86,7 @@ main.dark-theme {
 
 section {
     margin-bottom: 40px;
+    padding-left: 20px;
 }
 
 h1, h2 {
@@ -104,7 +115,7 @@ form button {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin: 0 auto 150px;
+    margin: 0 auto;
 }
 
 form button:hover {
@@ -120,18 +131,24 @@ footer {
 }
 .footer-item {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.wrap-adres {
+    display: flex;
+    align-items: baseline;
+}
+
+#footer-social {
+    padding-left: 100px;
 }
 
 .text-adres {
     font-size: 12px;
     text-align: left;
 } 
-
-.footer-item div {
-    padding: 10px;
-}
 
 footer.light-theme {
     background-color: rgba(255, 255, 255, 0.9);
@@ -151,6 +168,8 @@ footer h3 {
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .language-switcher button,
@@ -164,14 +183,24 @@ footer h3 {
 }
 
 .icon {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+.icon-weather-sunny, 
+.icon-adjust-brightness {
     width: 18px;
     height: 18px;
-    fill: #fff;
 }
 
 .icon:hover {
     fill: #32a201;
     background-size: contain;
+}
+
+#footer-text {
+    margin: auto;
+    padding-top: 100px;
 }
 
 .language-switcher button:hover,
@@ -196,8 +225,8 @@ button.active {
 /* SCROLL STYLES */
 .scroll-up  {
     position: fixed;
-    right: 48%;
-    bottom: 94%;
+    right: 4%;
+    bottom: 90%;
     width: 40px;
     height: 40px;
     color: #32a201;
@@ -232,7 +261,7 @@ button.active {
     
 .scroll-up_svg_path {
     box-sizing: border-box;
-    fill: #000;
+    fill: #0000009e;
     stroke: #fff;
     stroke-width: 4px;
     transition: .2s;
@@ -302,37 +331,242 @@ button.active {
     right: 10px;
 }
 
+.slogan {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
 
-/* Адаптивний стиль */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+.menu-mobile-container {
+    display: none; /* За замовчуванням приховуємо меню */
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    fill: #fff;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #32a201;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3c3b3b;
+}
+
+.desktop-btn {
+    display: none;
+}
+
+.mobile-call {
+    display: none;
+}
+
+/* Анімація для відкриття/закриття меню */
+.menu-container.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
     }
-
-    .body.dark-theme {
-        font-size: 22px;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/podos_background-mobile.webp');
-    } 
-
-    body.light-theme {
-        font-size: 22px;
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('img/podos_background-mobile.webp');
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    .form button {
-        width: 40%;
-    }
+.menu-container ul {
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+}
 
-    .icon {
-        width: 32px;
-        height: 32px;
-    }
+.menu-container ul li {
+    text-align: center;
+    margin: 10px 0;
+}
 
-    .footer-item,
-    .footer-item span {
-        display: block;
-        font-size: 22px;
-    }
+.menu-container ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
 
+.menu-container ul li a:hover {
+    color: #32a201;
+}
+
+.burger-menu.active svg {
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+
+/* .menu-overlay {
+    display: none; /* Подложка буде видима тільки під час відкриття меню 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100; /* Вищий за інші елементи 
+} */
+
+/* .menu-container {
+    /* display: none; Приховане за замовчуванням 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%; /* Ширина меню на мобільних 
+    height: 100%;
+    background-color: #000;
+    padding: 20px;
+    z-index: 101; /* Вище за overlay 
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+} */
+
+/* .menu-container.active {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0); /* Відкрите меню 
+} */
+
+/* --------- dropdown---------- */
+/* Стилі для контейнера */
+.dropdown {
+    position: relative;
+    display: inline-block; /* Дозволяє випадаючому меню бути поряд з іншими елементами */
+}
+
+/* Стилі для кнопки */
+.dropdown-toggle {
+    background-color: #32a201;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:active {
+    background-color: #333;
+}
+
+/* Стилі для списку */
+.dropdown-menu {
+    display: none; /* Ховаємо меню */
+    position: absolute; /* Позиціонуємо відносно контейнера */
+    background-color: #8b8989; /* Фон списку */
+    min-width: 160px; /* Мінімальна ширина */
+    box-shadow: 0px 8px 16px #89cc6c; /* Тінь */
+    z-index: 1; /* Пріоритетність у відображенні */
+    list-style-type: none; /* Прибираємо маркери списку */
+    padding: 10px 0; /* Внутрішні відступи */
+    margin: 0; /* Зовнішні відступи */
+    border-radius: 5px; /* Закруглення */
+    right: -38px;
+    top: 63px;
+}
+
+.dropdown-menu:hover {
+    color: #143f02;
+}
+
+/* Стилі для кнопки закриття */
+.close-menu {
+    background-color: #32a201;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.close-menu:hover {
+    background-color: #143f02;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Стилі для елементів списку */
+.dropdown-menu li {
+    padding: 4px 16px; /* Відступи всередині пункту меню */
+}
+
+/* Стилі для посилань */
+.dropdown-menu li a {
+    text-decoration: none; /* Без підкреслення */
+    color: #fff; /* Колір тексту */
+    display: block; /* Робимо елементи блочними */
+}
+
+/* Зміна стилю при наведенні */
+.dropdown-menu li:hover {
+    color: #32a201; /* Зміна кольору фону */
+}
+
+/* Показуємо меню при наведенні */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Показуємо меню при кліку */
+.dropdown-toggle:focus + .dropdown-menu {
+    display: block;
+}
+
+.modalwindow {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* MODAL (for coocie) */
+.close-btn {
+    font-size: x-large;
+    padding-left: 4px;
 }
