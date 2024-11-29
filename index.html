@@ -143,12 +143,15 @@
         <section id="contact">
             <h2 id="contact-title"></h2>
             <p id="contact-description"></p>
-            <form action="mailto:holvascompany@gmail.com" method="post" enctype="text/plain">
+            <form  id="contact-form" action="" method="" enctype="text/plain">
+                <input type="hidden" name="access_key" value="b73c0779-3ca0-4f68-bdfc-f5592a047fb9"> <!-- Додайте свій ключ Web3Forms -->
+                <input type="text" name="honeypot" style="display:none;"> <!-- Поле для захисту Honeypot -->
+
                 <label for="name" id="name-label"></label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="phone" id="phone-label"></label>
-                <input type="number" id="tel" name="tel" required>
+                <input type="number" id="tel" name="tel" pattern="^\+48[1-9]{9}|\+38[1-9]{10}$" required>
 
                 <label for="email" id="email-label"></label>
                 <input type="email" id="email" name="email" required>
@@ -174,8 +177,8 @@
     <footer class="footer-item">
         <div class="wrap-adres">
             <div class="adres">
-                <h3 id="footer-kontakt-text">Adres:</h3>
-                <p id="footer-kontakt-text-1">53-680 Wrocław, ul. Braniborska 61/13 <br/> <span class="text-adres">(budynek Legnicka Residence, 2 piętro, Gabinet przy studii 'Pracownia fryzur').</span></з>
+                <h3 id="footer-kontakt-text"></h3>
+                <p id="footer-kontakt-text-1"> <br/> <span class="text-adres" id="text-adres"></span></з>
                 <p id="footer-kontakt-text-2"></p>
                 <p id="footer-kontakt-text-3"></p>
                 <p id="footer-kontakt-text-4"></p>
@@ -200,7 +203,7 @@
         <p id="footer-text"></p>
     </footer>
 
-<!--     <div id="modal" class="modal">
+    <!-- <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <p>Witamy w PodOS!</p>
@@ -214,5 +217,6 @@
     <script src="js/scrollbutton.js" defer></script>
     <script src="js/caurosel.js" defer></script>
     <script src="js/menu-mobile.js" defer></script>
+    <script src="js/sendmailtest.js" defer></script>
 </body>
 </html>
