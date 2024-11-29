@@ -19,7 +19,7 @@ const translations = {
         "service-3-title": "Pielęgnacja stóp",
         "service-3-description": "Profilaktyka infekcji grzybiczych i nawilżanie stóp.",
         "contact-title": "Kontakt",
-        "contact-description": "Skontaktuj się z nami, aby umówić wizytę lub dowiedzieć się więcej o naszych usługach.",
+        "contact-description": "Skontaktuj się ze mną za pomocą poniższego formularza.",
         "name-label": "Imię i nazwisko:",
         "phone-label": "Numer telefonu:",
         "email-label": "Adres e-mail:",
@@ -28,6 +28,7 @@ const translations = {
         "footer-kontakt-text": "Adres:",
         "footer-kontakt-text-1": "53-680 Wrocław, ul. Braniborska 61/13",
         "footer-kontakt-text-2": "(budynek Legnicka Residence, 2 piętro, Gabinet przy studii 'Pracownia fryzur').",
+        "text-adre": "(budynek Legnicka Residence, 2 piętro, Gabinet przy studii 'Pracownia fryzur').",
         "footer-text": "© 2024 PodOS. Wszystkie prawa zastrzeżone.",
         "footer-social-1": "Śledź nas:",
         
@@ -51,13 +52,17 @@ const translations = {
         "service-3-title": "Догляд за ногами",
         "service-3-description": "Профілактика грибкових інфекцій та зволоження ніг.",
         "contact-title": "Контакт",
-        "contact-description": "Зв'яжіться з нами, щоб записатися на прийом або дізнатися більше про наші послуги.",
+        "contact-description": "Зв'яжіться зі мною за допомогою форми нижче.",
         "name-label": "Ім'я та прізвище:",
         "phone-label": "Номер телефону:",
         "email-label": "Електронна пошта:",
         "message-label": "Повідомлення:",
         "submit-btn": "Відправити",
-        "footer-text": "© 2024 PodOS. Всі права захищено."
+        "footer-kontakt-text": "Адреса:",
+        "footer-kontakt-text-1": "ul. Braniborska 61/13, Wrocław 53-680",
+        "footer-kontakt-text-2": "(будинок Legnicka Residence, 2 поверх, кабінет при студії 'Pracownia fryzur').",
+        "footer-text": "© 2024 PodOS. Всі права захищено.",
+        "footer-social-1": "Підписуйся на сторінки:",
     }
 };
 
