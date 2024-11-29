@@ -110,7 +110,7 @@ form input, form textarea, form button {
 }
 
 form button {
-    width: 40%;
+    width: 30%;
     background-color: #32a201;
     color: #fff;
     cursor: pointer;
