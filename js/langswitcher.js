@@ -5,7 +5,7 @@ const translations = {
         // "about-link": "O nas",
         "services-link": "Usługi",
         "contact-link": "Kontakt",
-        "blog": "Blog",
+        "blog-link": "Blog",
         // Home Section
         "home-title": "PodOS Gabinet Podologiczny Wrocław – Twoje Zdrowie od Stóp",
         "home-intro": "Gabinet Podologiczny PodOS (Wrocław) to miejsce, w którym dbałość o zdrowie i estetykę stóp łączy się z profesjonalizmem i nowoczesnymi metodami leczenia. Nazywam się Olena Stepanyulk, jestem wykwalifikowanym specjalistą podologiem i oferuję kompleksowe usługi podologiczne, które pomagają zachować zdrowie stóp niezależnie od wieku i problemów. Jeśli szukasz skutecznych rozwiązań takich jak pielęgnacja stóp we Wrocławiu, PodOS jest właściwym miejscem dla Ciebie.",
