@@ -1,6 +1,11 @@
 /* Адаптивний стиль */
 
 @media (max-width: 768px) {
+    body {
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+        
     header {
         flex-direction: column;
         text-align: center;
