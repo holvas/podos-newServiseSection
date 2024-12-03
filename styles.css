@@ -113,11 +113,19 @@ body.light-theme h2 {
     border-radius: 2%;
     border: 2px #333 solid;
     box-shadow: 0 0 10px #32a201;
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .img-contents p {
     padding-left: 40px;
+}
+
+.img-contents.right-side p {
+    padding-left: 0;
+}
+
+.img-contents.right-side img {
+    margin-left: 40px;
 }
 
 .service-grid {
