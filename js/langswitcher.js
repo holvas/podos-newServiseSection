@@ -1,16 +1,21 @@
 const translations = {
     pl: {
+        // Menu
         "home-link": "Główna",
         // "about-link": "O nas",
         "services-link": "Usługi",
         "contact-link": "Kontakt",
         "blog": "Blog",
-        "home-title": "PodOS - gabinet podologiczny Oleny Stepaniuk",
-        "home-description": "Serdecznie zapraszamy na konsultację, podczas której szczegółowo zidentyfikujemy Twój problem, opracujemy plan leczenia i dobierzemy odpowiedni harmonogram zabiegów.",
-        "home-description-2": "W gabinecie podologicznym „PodOS” wszystkie Twoje „czarne” problemy staną się „białym” rozwiązaniem!",
-        "about-title": "O nas",
-        "about-description": "Specjalizujemy się w podologii od wielu lat, oferując usługi takie jak leczenie odcisków, leczenie wrastających paznokci, pedicure medyczny, pielęgnację paznokci oraz inne problemów ze stopami. Korzystamy z nowoczesnych technologii i profesionalnego uządzenia, zapewniając indywidualne podejście do każdego klienta. Specjaliści naszego gabinetu podologicznego „PodOS” ukończyli edukację w zakresie podologii oraz certyfikację w swojej specjalności.",
-        "about-description-2": "Pracujemy wyłącznie zgodnie z normami sanitarno-epidemiologicznymi (wszystkie narzędzia używane podczas zabiegów po każdym zabiegu poddawane są obowiązkowej sterylizacji termicznej; po każdym zabiegu wszystkie środki higieny osobistej wymieniane są na nowe, dezynfekowane profesjonalnymi środkami, także po każdym zabiegu, wszystkie produkty jednorazowe (takie jak: rękawiczki jednorazowe, ręczniki i serwetki itp.) użyte podczas zabiegów podlegają utylizacji) i zgodnie z obowiązującymi przepisami BHP. Dzięki temu nasi klienci mogą czuć się bezpiecznie.",
+        // Home Section
+        "home-title": "PodOS Gabinet Podologiczny Wrocław – Twoje Zdrowie od Stóp",
+        "home-intro": "Gabinet Podologiczny PodOS (Wrocław) to miejsce, w którym dbałość o zdrowie i estetykę stóp łączy się z profesjonalizmem i nowoczesnymi metodami leczenia. Nazywam się Olena Stepanyulk, jestem wykwalifikowanym specjalistą podologiem i oferuję kompleksowe usługi podologiczne, które pomagają zachować zdrowie stóp niezależnie od wieku i problemów. Jeśli szukasz skutecznych rozwiązań takich jak pielęgnacja stóp we Wrocławiu, PodOS jest właściwym miejscem dla Ciebie.",
+        "home-why-title": "Dlaczego warto wybrać PodOS?",
+        "home-why-content": "Gabinet podologiczny PodOS we Wrocławiu to przestrzeń stworzona z myślą o Twoim komforcie i zdrowiu. Oferta PodOS obejmuje zarówno profilaktykę, jak i leczenie schorzeń takich jak: wrastające paznokcie, odciski, modzele, grzybica stóp i paznokci itp. Dzięki nowoczesnym technologiom i specjalistycznym lekom leczenie w moim gabinecie jest bezpieczne i skuteczne. Oferuję konsultacje, które pomagają zrozumieć przyczyny problemów i znaleźć optymalne sposoby ich rozwiązania.",
+        "home-services-title": "Usługi i ceny w PodOS Gabinet Podologiczny Wrocław",
+        "home-services-content": "W swojej pracy stawiam na przejrzystość i indywidualne podejście do klienta, a ceny są przystępne. Oferuję w szczególności: konsultację podologiczną od 100 zł, pedicure klasyczny od 200 zł, pedicure medyczny od 150 zł, usuwanie kalusa od 80 zł (pełny cennik dostępny pod tym linkiem). Gabinet podologiczny PodOS we Wrocławiu to miejsce komfortu, gdzie każdy zabieg dostosowywany jest do potrzeb pacjenta, co pozwala na osiągnięcie optymalnych efektów. Dlatego radzę umówić się na wizytę, by Twoje stopy mogły cieszyć się zdrowiem i pięknym wyglądem.",
+        "home-professional-title": "Gabinet podologiczny Wrocław – zaufaj profesjonaliście",
+        "home-professional-content": "PodOS to nie tylko miejsce zabiegów, ale także centrum edukacyjne. Uczymy naszych pacjentów, jak dbać o stopy na co dzień i unikać nawracających problemów. Wybierając nasz gabinet podologiczny Wrocław, zyskujesz gwarancję opieki na najwyższym poziomie. Odwiedź PodOS i zobacz, jak możemy Ci pomóc!",
+        // Services Section
         "services-title": "Nasze usługi",
         "service-1-title": "Leczenie odcisków",
         "service-1-description": "Szybkie i skuteczne leczenie odcisków oraz nagniotków.",
@@ -18,6 +23,7 @@ const translations = {
         "service-2-description": "Profesjonalna pielęgnacja wrastających paznokci.",
         "service-3-title": "Pielęgnacja stóp",
         "service-3-description": "Profilaktyka infekcji grzybiczych i nawilżanie stóp.",
+        // Contact Section
         "contact-title": "Kontakt",
         "contact-description": "Skontaktuj się ze mną za pomocą poniższego formularza.",
         "name-label": "Imię i nazwisko:",
@@ -25,6 +31,7 @@ const translations = {
         "email-label": "Adres e-mail:",
         "message-label": "Wiadomość:",
         "submit-btn": "Wyślij",
+       // Footer Section 
         "footer-kontakt-text": "Adres:",
         "footer-kontakt-text-1": "53-680 Wrocław, ul. Braniborska 61/13",
         "footer-kontakt-text-2": "(budynek Legnicka Residence, 2 piętro, Gabinet przy studii 'Pracownia fryzur').",
@@ -34,17 +41,21 @@ const translations = {
         
     },
     uk: {
+        // Menu
         "home-link": "Головна",
-        "about-link": "Про нас",
+        //"about-link": "Про нас",
         "services-link": "Послуги",
         "contact-link": "Контакт",
-        "home-title": "PodOS - Кабінет подології Олени Степанюк",
-        "home-description": "Запрошуємо Вас на консультацію, під час якої ми детально визначимо Вашу проблему, складемо схему лікування та підберемо відповідний графік відвідування процедур.",
-        "home-description-2": "У кабінеті подології «PodOS» всі Ваші «чорні» проблеми стануть «білими» рішеннями!",
-        "about-title": "Про нас",
-        "about-description": "Протягом багатьох років ми спеціалізуємося на подології, пропонуючи такі послуги, як лікування мозолів, лікування врослого нігтя, медичний педикюр, догляд за нігтями та інші проблеми зі стопами. Ми використовуємо сучасні технології та професійне обладнання, забезпечуючи індивідуальний підхід до кожного клієнта. Фахівці нашого подологічного кабінету «PodOS» пройшли навчання з подології та отримали сертифікати за фахом.",
-        "about-description-2": "Ми працюємо виключно відповідно до санітарно-епідеміологічних норм (усі інструменти, які використовуються під час обробок, підлягають обов'язковій термічній стерилізації після кожної обробки; після кожної процедури всі засоби особистої гігієни замінюються на нові, дезінфікуються професійними засобами, також після кожної обробки, всі одноразові продукти (такі як: одноразові рукавички, рушники та серветки тощо), які використовувалися під час лікування, утилізуються) відповідно до застосовних правил охорони здоров’я та безпеки. Завдяки цьому наші клієнти можуть почуватися в безпеці.",
-        "services-title": "Наші послуги",
+        "blog-link":"Блог",
+        // Home Section
+        "home-title": "PodOS полодогічний кабінет (Вроцлав) – Ваше здоров'я зі стоп",
+        "home-intro": "PodOS полодогічний кабінет (Вроцлав) – це місце, де турбота про здоров’я та естетику ніг поєднується з професіоналізмом та сучасними методами лікування. Мене звуть Олена Степанюк я кваліфікована спеціалістка подолог і пропоную комплексні послуги з подології, які допомагають зберегти здоров’я ніг незалежно від віку та проблем. Якщо ви шукаєте ефективні рішення такі, як догляд за ногами у Вроцлаві, PodOS — це правильне місце для вас.",
+        "home-why-title": "Чому варто обрати PodOS?",
+        "home-why-content": "Кабінет подології PodOS у Вроцлаві – це простір, створений з думкою про ваш комфорт і здоров’я. Пропозиція від PodOS включає як профілактику, так і лікування таких захворювань, як: врослі нігті, натоптиші, мозолі, а також грибок стоп і нігтів тощо. Завдяки сучасним технологіям і спеціалізованим препаратам лікування в моєму кабінеті є безпечним і ефективним. Пропоную консультації, які допомагають зрозуміти причини проблем і знайти оптимальні способи їх вирішення.",
+        "home-services-title": "Послуги та ціни в PodOS (подологічний кабінет, Wrocław)",
+        "home-services-content": "У своїй праці я зосередження на прозорості та індивідуальному підході до клієнта, а ціни доступні. Я пропоную, зокрема: консультацію подолога від 100 злотих, класичний педикюр від 200 злотих, медичний педикюр від 150 злотих, видалення мозолів від 80 злотих (повний прайс-лист доступний за цим посиланням). Подологічний кабінет PodOS у Вроцлаві - затишок, де кожна процедура адаптована до потреб пацієнта, що дозволяє досягти оптимальних результатів. Тож раджу Вам записатися на прийом, щоб Ваші ніжки були здоровими та красивими.",
+        "home-professional-title": "Подологічний кабінет Вроцлав – довіртеся професіоналу",
+        "home-professional-content": "PodOS – це не лише місце для лікування, а й освітній центр. Ми навчаємо наших пацієнтів, як щодня доглядати за своїми ногами та уникати повторних проблем. Обираючи наш кабінет подології у Вроцлаві, ви гарантовано отримуєте найвищий рівень обслуговування. Відвідайте PodOS і подивіться, як ми можемо вам допомогти!",      "services-title": "Наші послуги",
         "service-1-title": "Лікування мозолів",
         "service-1-description": "Швидке та ефективне лікування мозолів та натоптишів.",
         "service-2-title": "Корекція нігтів",
