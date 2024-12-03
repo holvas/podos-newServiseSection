@@ -16,7 +16,20 @@
     } 
 
     body.light-theme {
-        sbackground-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('img/podos_background-mobile.webp');
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('img/podos_background-mobile.webp');
+    }
+
+    .img-contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-contents img {
+        width: 70%;
+    }
+
+    .img-contents p {
+        padding-left: 0;
     }
 
     .form button {
