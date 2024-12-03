@@ -4,8 +4,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    font-size: 18px;
-    line-height: 1.3em;
+    font-size: 16px;
     margin: 0;
     color: #fff;
     transition: background-color 0.3s, color 0.3s, background-image 0.3s;
@@ -121,12 +120,12 @@ body.light-theme h2 {
     padding-left: 40px;
 }
 
-.img-contents.right-side p {
-    padding-left: 0;
-}
-
 .img-contents.right-side img {
     margin-left: 40px;
+}
+
+.img-contents.right-side p {
+    padding-left: 0;
 }
 
 .service-grid {
