@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 980px;
     margin: 0 auto;
     transition: background 0.3s;
 }
@@ -85,13 +85,35 @@ main.dark-theme {
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 140px;
     padding-left: 20px;
 }
 
 h1, h2 {
     color: #32a201;
     margin-bottom: 10px;
+}
+
+#home-title, #home-why-title,
+#home-services-title, #home-professional-title {
+    padding-top: 40px;
+}
+
+.img-contents {
+    display: flex;
+    align-items: center;
+}
+
+.img-contents img {
+    width: 20%;
+    border-radius: 2%;
+    border: 2px #333 solid;
+    box-shadow: 0 0 10px #32a201;
+    margin-top: 10px;
+}
+
+.img-contents p {
+    padding-left: 40px;
 }
 
 .service-grid {
