@@ -1,11 +1,6 @@
 /* Адаптивний стиль */
 
 @media (max-width: 768px) {
-    body {
-        font-size: 18px;
-        line-height: 1.3em;
-    }
-        
     header {
         flex-direction: column;
         text-align: center;
@@ -33,6 +28,19 @@
         width: 70%;
     }
 
+    .img-contents p {
+        padding-left: 0px;
+    }
+
+    .img-contents.right-side {
+        flex-direction: column-reverse;
+    }
+
+    .img-contents.right-side img {
+        margin-left: 0px;
+    }
+
+    .img-contents img
     .form button {
         width: 40%;
     }
