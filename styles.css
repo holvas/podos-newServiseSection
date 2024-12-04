@@ -404,6 +404,7 @@ button.active {
 
 .desktop-btn {
     display: none;
+    font-size: large;
 }
 
 .mobile-call {
@@ -613,6 +614,11 @@ button.active {
     gap: 14px;
 }
 
+.service {
+    position: relative; /* Контейнер для абсолютного позиціонування спойлера */
+    /* margin-bottom: 20px; Простір між блоками */
+}
+
 .service-title {
     cursor: pointer;
     background-color: #32a201;
@@ -622,7 +628,7 @@ button.active {
     margin: 0 10px;
     font-size: 18px;
     text-align: center;
-    max-width: 410px;
+    max-width: 420px;
 }
 
 .up {
@@ -634,11 +640,14 @@ button.active {
 }
 
 .service-details {
-    /* display: none; */
-    max-width: 410px;
+    position: absolute; /* Спойлер не зміщує інші блоки */
+    top: 100%; /* Починається одразу під кнопкою */
+    left: 0;
+
+    max-width: 420px;
     padding: 0px 10px;
     background-color: #f8f9fa;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 5px;
     margin: 0px 10px 20px 10px;
     font-size: 16px;
@@ -646,15 +655,29 @@ button.active {
 /* Приховуємо за замовчуванням */
     max-height: 0; /* Приховані елементи мають висоту 0 */
     overflow: hidden; /* Приховуємо зайвий контент */
-    transition: max-height 0.5s ease; /* Анімація висоти */
+    transition: max-height 0.8s ease; /* Анімація висоти */
     box-shadow: 0 0 10px #32a201;
+    z-index: 10; /* Перекриття інших елементів */
 } 
+
+.toggle-icon {
+    float: right; /* Іконка вирівнюється праворуч */
+    font-size: 20px;
+    font-weight: bold;
+    color: #32a201; /* Зелений колір іконки */
+    transition: transform 0.3s ease;
+}
+
+.service-title.open .toggle-icon {
+    transform: rotate(180deg); /* Змінюється напрямок іконки при відкритті */
+    content: "−"; /* Міняємо знак на "-" */
+}
 
 
 /* Відкритий стан */
 .service-details.open {
     max-height: 500px; /* Максимальна висота; виберіть значення, достатнє для всього контенту */
-    max-width: 410px;
+    max-width: 420px;
 }
 
 
