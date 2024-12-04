@@ -5,7 +5,7 @@
 body {
     font-family: 'Arial', sans-serif;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.3;
     margin: 0;
     color: #fff;
     transition: background-color 0.3s, color 0.3s, background-image 0.3s;
@@ -86,7 +86,7 @@ main.dark-theme {
 }
 
 section {
-    margin-bottom: 140px;
+    margin-bottom: 100px;
     padding: 0px 10px;
 }
 
@@ -599,6 +599,65 @@ button.active {
 .hidden {
     display: none;
 }
+
+/* Cтилізація спойлера */
+.wrap-service-items {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.service-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.service-title {
+    cursor: pointer;
+    background-color: #32a201;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 410px;
+}
+
+.up {
+    margin-top: 20px;
+}
+
+.service-title:hover {
+    background-color: #3c3b3b;
+}
+
+.service-details {
+    /* display: none; */
+    max-width: 410px;
+    padding: 0px 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0px 10px 20px 10px;
+    font-size: 16px;
+    color: #333;  
+/* Приховуємо за замовчуванням */
+    max-height: 0; /* Приховані елементи мають висоту 0 */
+    overflow: hidden; /* Приховуємо зайвий контент */
+    transition: max-height 0.5s ease; /* Анімація висоти */
+    box-shadow: 0 0 10px #32a201;
+} 
+
+
+/* Відкритий стан */
+.service-details.open {
+    max-height: 500px; /* Максимальна висота; виберіть значення, достатнє для всього контенту */
+    max-width: 410px;
+}
+
+
 
 /* MODAL (for coocie) */
 .close-btn {
