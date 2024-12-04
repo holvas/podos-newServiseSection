@@ -680,6 +680,10 @@ button.active {
     max-width: 420px;
 }
 
+.wrap {
+    width: 426px;
+}
+
 
 
 /* MODAL (for coocie) */
