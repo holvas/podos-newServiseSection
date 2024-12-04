@@ -162,6 +162,7 @@
 
     .desktop-btn {
         display: inline-block;
+        font-size: large;
     }
 }
 
