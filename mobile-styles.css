@@ -6,14 +6,14 @@
         text-align: center;
     }
 
+    h2 {
+        font-size: 20px;
+    }
+
     .hidden {
         display: block;
     }
 
-    h2 {
-        font-size: 20px;
-    }
-    
     .body.dark-theme {
         font-size: 22px;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/podos_background-mobile.webp');
@@ -141,6 +141,10 @@
         text-decoration: none;
         color: #fff;
     }
+    
+    .wrap-service-items {
+        flex-direction: column;
+    }
 
 }
 
@@ -162,7 +166,6 @@
 
     .desktop-btn {
         display: inline-block;
-        font-size: large;
     }
 }
 

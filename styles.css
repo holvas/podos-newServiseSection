@@ -612,12 +612,29 @@ button.active {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    
+    @media (max-width: 768px) {
+        .service-grid {
+            grid-template-columns: 1fr; /* Замість 3 колонок, використовувати 1 */
+            gap: 10px;
+        }
+    }
 }
 
 .service {
     position: relative; /* Контейнер для абсолютного позиціонування спойлера */
-    /* margin-bottom: 20px; Простір між блоками */
+    margin-bottom: 20px; /*Простір між блоками*/
+
+    flex: 1 1 calc(50% - 10px); /* Дві колонки для планшетів */
+    max-width: calc(50% - 10px);
 }
+    
+    @media (max-width: 768px) {
+        .service {
+            flex: 1 1 100%; /* Одна колонка для мобільних */
+            max-width: 100%;
+        }
+    }
 
 .service-title {
     cursor: pointer;
@@ -673,18 +690,11 @@ button.active {
     content: "−"; /* Міняємо знак на "-" */
 }
 
-
 /* Відкритий стан */
 .service-details.open {
     max-height: 500px; /* Максимальна висота; виберіть значення, достатнє для всього контенту */
     max-width: 420px;
 }
-
-.wrap {
-    width: 426px;
-}
-
-
 
 /* MODAL (for coocie) */
 .close-btn {
